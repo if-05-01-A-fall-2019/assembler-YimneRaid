@@ -1,0 +1,43 @@
+"Geben Sie bitte einen Maxwert ein:Geben Sie Ihre Punkteanzahl ein:Erreichte Prozentanzahl:%"
+inc 20
+
+#MAXPOINTS
+lit 0
+lit 34
+lit 35
+out 2
+
+la 0 32
+la 0 36
+in 0
+
+#USERPOINTS
+lit 34
+lit 32
+lit 33
+out  2
+
+la 0 40
+la 0 44
+in 0
+
+la 0 48
+lv 0 40
+lit 100
+mul
+lv 0 32
+div
+sto
+
+lit 66
+lit 24
+lit 25
+out  2
+
+
+lv 0 48
+lit 1
+out 0
+out 3
+
+halt
